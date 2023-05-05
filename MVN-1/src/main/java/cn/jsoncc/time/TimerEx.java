@@ -6,8 +6,12 @@ import java.util.concurrent.Executors;
         import java.util.concurrent.ScheduledExecutorService;
         import java.util.concurrent.TimeUnit;
 
+/**
+ * @author Jsoncc
+ * 定时任务：从当前时间开始每次增加1秒并输出
+ */
 public class TimerEx {
-    private final static SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    private final static SimpleDateFormat FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     public static void main(String[] args) {
         ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
@@ -15,7 +19,7 @@ public class TimerEx {
         Runnable task = () -> {
             try {
                 //输出的内容
-                System.out.println(format.format(new Date()));
+                System.out.println(FORMAT.format(new Date()));
                 //间隔的时间，单位：毫秒，1000毫秒=1秒
 //                Thread.sleep(3000);
             } catch (Exception e) {
