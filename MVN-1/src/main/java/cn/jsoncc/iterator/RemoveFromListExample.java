@@ -5,6 +5,7 @@ package cn.jsoncc.iterator;
  * @date 2023/5/9 16:07
  * @desc
  */
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -18,7 +19,7 @@ public class RemoveFromListExample {
         dataList.add(new Data(3, "C"));
         dataList.add(new Data(1, "D"));
         dataList.add(new Data(5, "E"));
-        System.out.println("原数组："+dataList);
+        System.out.println("原数组：" + dataList);
 
         // 遍历List并移除满足条件的数据
         Iterator<Data> iterator = dataList.iterator();
