@@ -19,7 +19,7 @@ public class RegexDemo {
         Matcher matcher = pattern.matcher(html);
         if (matcher.find()) {
             System.out.println(matcher.group(1));
-        }else {
+        } else {
             System.out.println("正则表达式查找错误！");
         }
     }
