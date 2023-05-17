@@ -5,7 +5,10 @@ package cn.jsoncc.hashmap;
  * @date 2023/5/17 15:30
  * @desc hashmap的示例
  */
+import com.google.common.collect.Maps;
+
 import java.util.HashMap;
+import java.util.Map;
 
 public class HashMapExample {
     public static void main(String[] args) {
@@ -16,6 +19,7 @@ public class HashMapExample {
         hashMap.put("apple", 10);
         hashMap.put("banana", 5);
         hashMap.put("orange", 8);
+        System.out.println("HashMap的值：" + hashMap);
 
         // 获取值
         int appleCount = hashMap.get("apple");
@@ -35,6 +39,11 @@ public class HashMapExample {
         // 添加键值对
         hashMap.put("watermelon", 1);
         System.out.println("添加新键值对之后的HashMap对象：" + hashMap);
+
+        // 使用Map，添加了新的依赖com.google.guava/guava
+        Map<String, String> map = Maps.newHashMap();
+        map.put("Monday", "周一");
+        System.out.println("map的值：" + map);
 
     }
 }
