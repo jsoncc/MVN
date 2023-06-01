@@ -1,7 +1,9 @@
 package cn.jsoncc;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringBootVersion;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.core.SpringVersion;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,7 +12,7 @@ import java.text.SimpleDateFormat;
 /**
  * @author JsonCC
  * @date 2023/5/26 14:23
- * @desc
+ * @desc 主启动类
  */
 
 @RestController
@@ -21,7 +23,9 @@ public class MyApplication {
     String home() {
         long time = System.currentTimeMillis();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        return "Hello World!!!" + sdf.format(time);
+        String springVersion = SpringVersion.getVersion();
+        String springBootVersion = SpringBootVersion.getVersion();
+        return "Spring版本:" + springVersion + "\nSpringBoot版本:" + springBootVersion + "\n时间：" + sdf.format(time);
     }
 
     public static void main(String[] args) {
