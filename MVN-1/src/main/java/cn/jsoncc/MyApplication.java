@@ -1,14 +1,17 @@
 package cn.jsoncc;
 
+import cn.jsoncc.entity.Person;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootVersion;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.SpringVersion;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 
 /**
  * @author JsonCC
@@ -31,7 +34,13 @@ public class MyApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(MyApplication.class, args);
+//        SpringApplication.run(MyApplication.class, args);
+
+        ConfigurableApplicationContext context = SpringApplication.run(MyApplication.class, args);
+        Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
+
+        Person person = context.getBean(Person.class);
+        System.out.println("person" + person);
     }
 
 }
