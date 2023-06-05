@@ -3,6 +3,7 @@ package cn.jsoncc;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootVersion;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.SpringVersion;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +18,7 @@ import java.text.SimpleDateFormat;
 
 @RestController
 @SpringBootApplication
+@ComponentScan("cn.jsoncc")
 public class MyApplication {
 
     @RequestMapping("/index")
