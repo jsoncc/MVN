@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
  * @desc
  */
 @Data
-@Component
 @ConfigurationProperties(prefix = "operator")
 public class Person {
     private String name;

@@ -1,5 +1,7 @@
 package cn.jsoncc.controlller;
 
+import cn.jsoncc.entity.Person;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RequestMapping(value = "hello")
 @RestController
+@EnableConfigurationProperties({Person.class})
 public class ApplicationDemo {
     @RequestMapping(value = "/list")
     public String list(){

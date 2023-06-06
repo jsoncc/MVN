@@ -40,7 +40,7 @@ public class MyApplication {
         Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 
         Person person = context.getBean(Person.class);
-        System.out.println("person" + person);
+        System.out.println("person：" + person);
     }
 
 }
