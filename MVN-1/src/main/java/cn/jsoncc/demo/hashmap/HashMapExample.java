@@ -7,6 +7,7 @@ package cn.jsoncc.demo.hashmap;
  */
 import com.google.common.collect.Maps;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -41,9 +42,19 @@ public class HashMapExample {
         System.out.println("添加新键值对之后的HashMap对象：" + hashMap);
 
         // 使用Map，添加了新的依赖com.google.guava/guava
-        Map<String, String> map = Maps.newHashMap();
-        map.put("Monday", "周一");
-        System.out.println("map的值：" + map);
+        Map<String, String> mapString = Maps.newHashMap();
+        mapString.put("Monday", "周一");
+        System.out.println("map的值（值为String类型）：" + mapString);
+
+        Map<String, Object> mapInt = new HashMap<>();
+        mapInt.put("张三", 20);
+        mapInt.put("李四", 12);
+
+        mapInt.replaceAll((k, v) -> String.valueOf(v));
+        System.out.println("int转换为String后的mapInt：" + mapInt);
+        Collection<Object> values = mapInt.values();
+        System.out.println("将值以集合形式输出：" + values);
+
 
     }
 }
