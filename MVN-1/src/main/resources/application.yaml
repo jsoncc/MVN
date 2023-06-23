@@ -9,3 +9,10 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+
+#  连接mysql
+  datasource:
+    url: jdbc:mysql://localhost:3307/mvn
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver

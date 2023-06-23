@@ -25,6 +25,7 @@
         <lombok.version>RELEASE</lombok.version>
         <swagger.version>2.9.2</swagger.version>
         <jackson-annotations.version>2.13.5</jackson-annotations.version>
+        <mysql.version>8.0.23</mysql.version>
     </properties>
 
     <dependencies>
@@ -71,6 +72,13 @@
             <artifactId>jackson-annotations</artifactId>
             <version>${jackson-annotations.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+
 
 
 
