@@ -4,3 +4,8 @@ server:
 operator:
   name: 张三
   age: 18
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher

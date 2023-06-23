@@ -21,7 +21,6 @@ import java.util.Arrays;
 
 @RestController
 @SpringBootApplication
-@ComponentScan("cn.jsoncc")
 public class MyApplication {
 
     @RequestMapping("/index")
