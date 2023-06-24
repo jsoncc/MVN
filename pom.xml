@@ -26,6 +26,7 @@
         <swagger.version>2.9.2</swagger.version>
         <jackson-annotations.version>2.13.5</jackson-annotations.version>
         <mysql.version>8.0.23</mysql.version>
+        <mybatis-generator.version>1.4.0</mybatis-generator.version>
     </properties>
 
     <dependencies>
@@ -83,5 +84,30 @@
 
 
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- MyBatis Generator Plugin -->
+            <plugin>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-maven-plugin</artifactId>
+                <version>${mybatis-generator.version}</version>
+                <configuration>
+                    <!-- 配置文件的路径 -->
+                    <configurationFile>src/main/resources/generator-config.xml</configurationFile>
+                    <overwrite>true</overwrite>
+                </configuration>
+                <dependencies>
+                    <!-- MySQL Connector -->
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>${mysql.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
 
 </project>

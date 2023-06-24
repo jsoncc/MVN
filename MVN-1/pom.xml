@@ -19,13 +19,14 @@
         <junit.version>4.13.1</junit.version>
         <spring-context.version>5.3.18</spring-context.version>
         <guava.version>31.1-jre</guava.version>
+        <mvn.version>1.0-SNAPSHOT</mvn.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>cn.jsoncc</groupId>
             <artifactId>MVN-2</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${mvn.version}</version>
             <scope>compile</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
