@@ -5,7 +5,7 @@
 <generatorConfiguration>
 <!--    <properties resource="application.yaml" />-->
     <!-- mysql驱动的位置 这个是MySQL连接的jar包，你需要指定你自己计算机上的jar包的位置-->
-    <classPathEntry location="E:\Program Files\Java\maven\repo\mysql\mysql-connector-java\8.0.23\mysql-connector-java-8.0.23.jar" />
+    <classPathEntry location="D:\JavaFiles\IdeaProjects\maven\repository\mysql\mysql-connector-java\8.0.23\mysql-connector-java-8.0.23.jar" />
 
     <context id="testTables" targetRuntime="MyBatis3">
         <commentGenerator>
@@ -15,7 +15,7 @@
         <!--这个是mysql的配置-->
         <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3307/mvn"
+                        connectionURL="jdbc:mysql://localhost:3306/mvn"
                         userId="root"
                         password="">
             <!-- 如：生成user表的时候，会把所有的库中的user表都生成一遍，换一种查表方式，指定数据库 -->
@@ -72,11 +72,11 @@
             modelType：参考context元素的defaultModelType，相当于覆盖；
         -->
         <table schema="mvn" tableName="user" domainObjectName="User"
-               enableCountByExample="false"
-               enableUpdateByExample="false"
-               enableDeleteByExample="false"
-               enableSelectByExample="false"
-               selectByExampleQueryId="false">
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true">
         </table>
 <!--        <table tableName="address" domainObjectName="Address"></table>-->
     </context>

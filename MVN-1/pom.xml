@@ -29,6 +29,12 @@
             <version>${mvn.version}</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>cn.jsoncc</groupId>
+            <artifactId>MVN-3</artifactId>
+            <version>${mvn.version}</version>
+            <scope>compile</scope>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>

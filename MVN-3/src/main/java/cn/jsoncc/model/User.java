@@ -1,17 +1,19 @@
 package cn.jsoncc.model;
 
+import java.math.BigDecimal;
+
 public class User {
-    private Integer id;
+    private Long id;
 
     private String name;
 
-    private Long age;
+    private BigDecimal age;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -23,11 +25,11 @@ public class User {
         this.name = name == null ? null : name.trim();
     }
 
-    public Long getAge() {
+    public BigDecimal getAge() {
         return age;
     }
 
-    public void setAge(Long age) {
+    public void setAge(BigDecimal age) {
         this.age = age;
     }
 }
