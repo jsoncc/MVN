@@ -15,12 +15,12 @@ import javax.annotation.Resource;
 @Service
 public class UserServiceImpl implements UserService {
 
-//    @Resource
-//    private UserMapper userMapper;
+    @Resource
+    private UserMapper userMapper;
 
-//    @Override
-//    public Boolean insert(User user) {
-//
-//        return userMapper.insert(user) > 0;
-//    }
+    @Override
+    public Boolean insert(User user) {
+
+        return userMapper.insert(user) > 0;
+    }
 }

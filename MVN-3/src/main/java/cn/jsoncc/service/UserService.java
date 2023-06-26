@@ -9,5 +9,5 @@ import cn.jsoncc.model.User;
  */
 public interface UserService {
 
-//    Boolean insert(User user);
+    Boolean insert(User user);
 }

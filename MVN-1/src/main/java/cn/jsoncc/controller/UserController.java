@@ -18,8 +18,8 @@ import java.math.BigDecimal;
 @RequestMapping(value = "/list")
 @RestController
 public class UserController {
-//    @Resource
-//    private UserService userService;
+    @Resource
+    private UserService userService;
 
     @ApiOperation(value = "用户", notes = "用户信息添加")
     @RequestMapping(value = "/userGet", method = RequestMethod.GET)
@@ -27,6 +27,6 @@ public class UserController {
         User user = new User();
         user.setName("张三");
         user.setAge(BigDecimal.valueOf(20));
-//        userService.insert(user);
+        userService.insert(user);
     }
 }
