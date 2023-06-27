@@ -3,8 +3,9 @@ package cn.jsoncc.mapper;
 import cn.jsoncc.model.User;
 import cn.jsoncc.model.UserExample;
 import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.mapstruct.Mapper;
 import org.springframework.stereotype.Repository;
 
 @Mapper

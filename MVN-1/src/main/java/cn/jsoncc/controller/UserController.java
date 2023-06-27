@@ -24,9 +24,9 @@ public class UserController {
     @ApiOperation(value = "用户", notes = "用户信息添加")
     @RequestMapping(value = "/userGet", method = RequestMethod.GET)
     public void user(){
-        User user = new User();
-        user.setName("张三");
-        user.setAge(BigDecimal.valueOf(20));
-        userService.insert(user);
+        User User = new User();
+        User.setName("张三");
+        User.setAge(BigDecimal.valueOf(20));
+        userService.insert(User);
     }
 }
