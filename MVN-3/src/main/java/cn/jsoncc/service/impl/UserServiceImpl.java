@@ -3,6 +3,7 @@ package cn.jsoncc.service.impl;
 import cn.jsoncc.mapper.UserMapper;
 import cn.jsoncc.model.User;
 import cn.jsoncc.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -16,11 +17,11 @@ import javax.annotation.Resource;
 public class UserServiceImpl implements UserService {
 
     @Resource
+    @Autowired
     private UserMapper userMapper;
 
     @Override
-    public Boolean insert(User user) {
-
-        return userMapper.insert(user) > 0;
+    public User selectById(Long id) {
+        return userMapper.selectByPrimaryKey(id);
     }
 }

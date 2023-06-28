@@ -12,7 +12,7 @@ spring:
 
 #  连接mysql
   datasource:
-    url: jdbc:mysql://localhost:3307/mvn
+    url: jdbc:mysql://localhost:3306/mvn
     username: root
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -21,3 +21,6 @@ spring:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: cn.jsoncc.model
+  config-location: classpath:mybatis-config.xml
+
+

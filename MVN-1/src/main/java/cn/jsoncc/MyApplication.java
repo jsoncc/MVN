@@ -1,6 +1,7 @@
 package cn.jsoncc;
 
 import cn.jsoncc.entity.Person;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootVersion;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -21,6 +22,7 @@ import java.util.Arrays;
 
 @RestController
 @SpringBootApplication
+@MapperScan("cn.jsoncc.mapper")
 public class MyApplication {
 
     @RequestMapping("/index")

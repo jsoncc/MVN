@@ -72,11 +72,11 @@
             modelType：参考context元素的defaultModelType，相当于覆盖；
         -->
         <table schema="mvn" tableName="user" domainObjectName="User"
-               enableCountByExample="true"
-               enableUpdateByExample="true"
-               enableDeleteByExample="true"
-               enableSelectByExample="true"
-               selectByExampleQueryId="true">
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false">
         </table>
 <!--        <table tableName="address" domainObjectName="Address"></table>-->
     </context>

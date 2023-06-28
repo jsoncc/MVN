@@ -1,5 +1,6 @@
 package cn.jsoncc.service;
 
+
 import cn.jsoncc.model.User;
 
 /**
@@ -9,5 +10,5 @@ import cn.jsoncc.model.User;
  */
 public interface UserService {
 
-    Boolean insert(User user);
+    User selectById(Long id);
 }

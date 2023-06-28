@@ -16,7 +16,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j-api.version>1.7.36</slf4j-api.version>
-        <junit.version>4.13.1</junit.version>
         <spring-context.version>5.3.18</spring-context.version>
         <guava.version>31.1-jre</guava.version>
         <mvn.version>1.0-SNAPSHOT</mvn.version>
@@ -34,13 +33,6 @@
             <artifactId>MVN-3</artifactId>
             <version>${mvn.version}</version>
             <scope>compile</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
         <dependency>
