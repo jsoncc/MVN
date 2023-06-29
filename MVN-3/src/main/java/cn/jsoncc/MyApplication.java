@@ -1,6 +1,5 @@
 package cn.jsoncc;
 
-import cn.jsoncc.entity.Person;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootVersion;
@@ -35,13 +34,13 @@ public class MyApplication {
     }
 
     public static void main(String[] args) {
-//        SpringApplication.run(MyApplication.class, args);
+        SpringApplication.run(MyApplication.class, args);
 
-        ConfigurableApplicationContext context = SpringApplication.run(MyApplication.class, args);
-        Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
-
-        Person person = context.getBean(Person.class);
-        System.out.println("person：" + person);
+//        ConfigurableApplicationContext context = SpringApplication.run(MyApplication.class, args);
+//        Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
+//
+//        Person person = context.getBean(Person.class);
+//        System.out.println("person：" + person);
     }
 
 }

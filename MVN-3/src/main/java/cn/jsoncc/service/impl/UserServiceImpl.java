@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * Author: JsonCC
@@ -21,7 +22,7 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    public User selectById(Long id) {
-        return userMapper.selectByPrimaryKey(id);
+    public List<User> select() {
+        return userMapper.getAll();
     }
 }
