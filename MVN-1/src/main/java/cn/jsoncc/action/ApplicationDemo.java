@@ -1,4 +1,4 @@
-package cn.jsoncc.controller;
+package cn.jsoncc.action;
 
 import cn.jsoncc.entity.Person;
 import io.swagger.annotations.Api;

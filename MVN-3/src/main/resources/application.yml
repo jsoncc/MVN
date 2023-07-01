@@ -9,13 +9,19 @@ operator:
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/mvn
+    url: jdbc:mysql://localhost:3307/mvn
     username: root
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
+
+#  解决springboot和swagger2版本冲突
+#  SpringBoot2.6.x与Swagger2 3.0.0版本冲突原因
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 
 # MyBatis配置
 mybatis:

@@ -93,7 +93,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
-            <version>${spring-boot.version}</version>
         </dependency>
         <!-- 核心功能 -->
         <dependency>
@@ -139,25 +138,25 @@
         <plugins>
             <!-- MyBatis Generator Plugin -->
             <plugin>
-                <groupId>org.mybatis.generator</groupId>
-                <artifactId>mybatis-generator-maven-plugin</artifactId>
-                <version>${mybatis-generator.version}</version>
-                <configuration>
-                    <!-- 配置文件的路径 -->
-                    <configurationFile>src/main/resources/generator-config.xml</configurationFile>
-                    <overwrite>true</overwrite>
-                </configuration>
-                <dependencies>
-                    <!-- MySQL Connector -->
-                    <dependency>
-                        <groupId>mysql</groupId>
-                        <artifactId>mysql-connector-java</artifactId>
-                        <version>${mysql.version}</version>
-                    </dependency>
-                </dependencies>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <!-- 添加资源 -->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <!-- src/main/resources下的指定资源放行 -->
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.yml</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
     </build>
+
 
 
 </project>

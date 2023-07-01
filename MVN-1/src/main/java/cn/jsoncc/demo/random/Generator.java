@@ -34,7 +34,7 @@
 //    private static SqlSessionFactory sqlSessionFactory;
 //
 //    static {
-//        try (SqlSession session = SqlSessionFactoryBuilder.build(Resources.getResourceAsStream("application.yaml"))) {
+//        try (SqlSession session = SqlSessionFactoryBuilder.build(Resources.getResourceAsStream("application.yml"))) {
 //            sqlSessionFactory = session.getConfiguration().newSqlSessionFactory();
 //        }
 //    }
