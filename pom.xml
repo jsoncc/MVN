@@ -146,11 +146,12 @@
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
-                <!-- src/main/resources下的指定资源放行 -->
+                <!-- src/main/resources下的指定资源放行，使资源经过maven时可以打包进来 -->
                 <includes>
                     <include>**/*.properties</include>
                     <include>**/*.yml</include>
                     <include>**/*.xml</include>
+                    <include>static/**</include>
                 </includes>
                 <filtering>false</filtering>
             </resource>

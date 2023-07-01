@@ -1,4 +1,4 @@
-package cn.jsoncc.controller;
+package cn.jsoncc.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,7 +11,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * @author JsonCC
  * @date 2023/6/20 13:40
- * @desc
+ * @desc 访问路径：地址+端口号+swagger-ui.html#/   例如：http://localhost:1000/swagger-ui.html#/
  */
 @Configuration
 @EnableSwagger2 // 启用Swagger2
