@@ -39,9 +39,9 @@ public class MonthDate {
 
         // 获取这一天最后的时间（即23时59分59秒）
         LocalDateTime endOfDay = dateTimeEnd.with(LocalTime.MAX);//2023-06-30T23:59:59.999999999
-        String formattedendOfDay = endOfDay.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));//2023-06-30 23:59:59
+        String formattedEndOfDay = endOfDay.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));//2023-06-30 23:59:59
 
         System.out.println("上个月的第一天：" + formattedStartOfDay);//上个月的第一天：2023-06-01 00:00:00
-        System.out.println("上个月的最后一天：" + formattedendOfDay);//上个月的最后一天：2023-06-30 23:59:59
+        System.out.println("上个月的最后一天：" + formattedEndOfDay);//上个月的最后一天：2023-06-30 23:59:59
     }
 }
