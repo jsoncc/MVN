@@ -6,12 +6,12 @@ import java.io.*;
 /**
  * @author JsonCC
  * @date 2023/9/1 15:57
- * @desc 将一个Base64码转成压缩包,保存到本地指定路径
+ * @desc 将一个Base64码转成压缩包, 保存到本地指定路径
  */
 
 public class Base64ToZip {
     public static void main(String[] args) {
-        String base64EncodedData = "fp.bwjf.cn/downInvoice/026/050003521107_99915455?sign=bac20f3574883f6f9bb1389f62941188bbed044a"; // 替换为你的Base64编码字符串
+        String base64EncodedData = "一个Base64字符串"; // 替换为你的Base64编码字符串
         String outputFilePath = "D:\\JavaFiles\\IdeaProjects\\output.zip"; // 输出文件路径
 
         try {
