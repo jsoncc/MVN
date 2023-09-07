@@ -11,8 +11,10 @@ import java.io.*;
 
 public class Base64ToZip {
     public static void main(String[] args) {
-        String base64EncodedData = "一个Base64字符串"; // 替换为你的Base64编码字符串
-        String outputFilePath = "D:\\JavaFiles\\IdeaProjects\\output.zip"; // 输出文件路径
+        // 替换为你的Base64编码字符串
+        String base64EncodedData = "一个Base64字符串";
+        // 输出文件路径
+        String outputFilePath = "D:\\JavaFiles\\IdeaProjects\\output.zip";
 
         try {
             // 解码Base64字符串并写入文件
