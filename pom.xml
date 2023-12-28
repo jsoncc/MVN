@@ -37,9 +37,16 @@
         <mysql.version>8.0.23</mysql.version>
         <mybatis-generator.version>1.4.0</mybatis-generator.version>
         <junit.version>4.13.1</junit.version>
+        <hutool-all.version>5.8.24</hutool-all.version>
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool-all.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

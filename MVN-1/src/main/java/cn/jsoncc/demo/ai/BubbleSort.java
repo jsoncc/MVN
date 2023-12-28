@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author JsonCC
  * @date 2023/12/26 15:32
- * @desc
+ * @desc 算法：冒泡排序
  */
 
 public class BubbleSort {
