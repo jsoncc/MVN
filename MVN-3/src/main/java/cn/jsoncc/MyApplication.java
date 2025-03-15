@@ -36,6 +36,7 @@ public class MyApplication {
     public static void main(String[] args) {
         SpringApplication.run(MyApplication.class, args);
 
+
 //        ConfigurableApplicationContext context = SpringApplication.run(MyApplication.class, args);
 //        Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 //
